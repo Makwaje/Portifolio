@@ -8,7 +8,7 @@ import {
   Preview,
   Section,
   Text,
-} from "@react-email/components";
+} from "react-email/components";
 import { Tailwind } from "@react-email/tailwind";
 
 type ContactFormEmailProps = {
