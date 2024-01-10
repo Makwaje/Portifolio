@@ -56,7 +56,7 @@ export default function Project({
         <Image
           src={imageUrl}
           alt="Project i worked on"
-          quality={90}
+          quality={30}
           className="group-even:-right-[initial] absolute -right-40 top-8 hidden w-[28.25rem] rounded-t-xl shadow-2xl transition group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2
         group-hover:scale-105 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2 sm:block
