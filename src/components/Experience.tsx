@@ -40,9 +40,7 @@ function Experience() {
               icon={item.icon}
               iconStyle={{
                 background:
-                  theme === "light"
-                    ? "white"
-                    : "0.4rem solid rgba(255,255,255,0.15)",
+                  theme === "light" ? "white" : "rgba(255,255,255,0.15)",
                 fontSize: "1.5rem",
               }}
               iconClassName="dark:stroke-black/50"
