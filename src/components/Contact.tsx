@@ -4,7 +4,7 @@ import SectionHeading from "./Section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "../lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
-
+import { LuCheck, LuCheckCircle, LuCheckCircle2 } from "react-icons/lu";
 import SubmitButton from "./Submit-btn";
 import { toast } from "react-hot-toast";
 
@@ -29,7 +29,13 @@ function Contact() {
       <p className="-mt-6 text-sm text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a href="mailto:" className="underline">
-          Makwaje999@gmail.com
+          Makwaje999@gmail.com{" "}
+          <LuCheckCircle2
+            size={16}
+            fill="white"
+            stroke="black"
+            className="mb-1.5 inline"
+          />
         </a>{" "}
         or through this form
       </p>
@@ -37,16 +43,20 @@ function Contact() {
       <form
         className="mt-10 flex flex-col justify-center dark:text-black "
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+          // const { data, error } = await sendEmail(formData);
 
-          if (error) {
-            toast.error(error);
+          // if (error) {
+          //   toast.error(error);
 
-            return;
-          }
+          //   return;
+          // }
+          toast.error("This feature is currently not working");
+          setTimeout(function () {
+            toast.error("Please contact me directly at Makwaje999@gmail.com");
+          }, 1500);
 
-          toast.success("Email sent successfully!");
-          console.log(data);
+          // toast.success("Email sent successfully!");
+          // console.log(data);
         }}
       >
         <input
