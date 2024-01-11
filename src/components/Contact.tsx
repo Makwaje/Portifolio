@@ -45,8 +45,8 @@ function Contact() {
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
-          if (error) {
-            toast.error(error);
+          if (data?.error?.message) {
+            toast.error(data?.error?.message);
 
             return;
           }
