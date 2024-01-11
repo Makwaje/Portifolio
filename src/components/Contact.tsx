@@ -43,20 +43,20 @@ function Contact() {
       <form
         className="mt-10 flex flex-col justify-center dark:text-black "
         action={async (formData) => {
-          // const { data, error } = await sendEmail(formData);
+          const { data, error } = await sendEmail(formData);
 
-          // if (error) {
-          //   toast.error(error);
+          if (error) {
+            toast.error(error);
 
-          //   return;
-          // }
-          toast.error("This feature is currently not working");
-          setTimeout(function () {
-            toast.error("Please contact me directly at Makwaje999@gmail.com");
-          }, 1500);
+            return;
+          }
+          //// toast.error("This feature is currently not working");
+          //// setTimeout(function () {
+          ////   toast.error("Please contact me directly at Makwaje999@gmail.com");
+          //// }, 1500);
 
-          // toast.success("Email sent successfully!");
-          // console.log(data);
+          toast.success("Email sent successfully!");
+          console.log(data);
         }}
       >
         <input
