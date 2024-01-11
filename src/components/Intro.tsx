@@ -103,7 +103,7 @@ function Intro() {
 
         <a
           className="borderBlack flex w-fit cursor-pointer items-center justify-center gap-2 self-center rounded-full bg-white p-4 text-[1.30rem] transition-all hover:scale-[1.15] focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/80"
-          href="https://github.com"
+          href="http://github.com/Makwaje"
           target="_blank"
         >
           <FaGithubSquare />
