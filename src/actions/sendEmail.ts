@@ -6,7 +6,7 @@ import ContactFormEmail from "@/email/contact-form-email";
 import React from "react";
 
 export const sendEmail = async (formData: FormData) => {
-  const resend = new Resend(process.env.RESEND_API_KEY);
+  const resend = new Resend("re_EzghNqKt_2XSpoKhkPXrq2SM7xjkMjE2Y");
 
   console.log("Running on the server");
   const senderEmail = formData.get("senderEmail");
