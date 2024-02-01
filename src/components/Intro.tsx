@@ -95,7 +95,7 @@ function Intro() {
 
         <a
           className="borderBlack flex w-fit cursor-pointer items-center justify-center gap-2 self-center rounded-full bg-white p-4 transition-all hover:scale-[1.15]  focus:scale-110 active:scale-105 dark:bg-white/10 dark:text-white/80 "
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/makwaje"
           target="_blank"
         >
           <BsLinkedin />
