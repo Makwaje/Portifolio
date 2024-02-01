@@ -56,8 +56,8 @@ function Contact() {
             return;
           }, 1500);
 
-          toast.success("Email sent successfully!");
-          console.log(data);
+          // toast.success("Email sent successfully!");
+          // console.log(data);
         }}
       >
         <input
