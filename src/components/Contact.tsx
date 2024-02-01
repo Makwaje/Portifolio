@@ -45,15 +45,16 @@ function Contact() {
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
-          if (data?.error?.message) {
-            toast.error(data?.error?.message);
+          // if (data?.error?.message) {
+          //   toast.error(data?.error?.message);
 
+          //   return;
+          // }
+          toast.error("This feature is currently not working");
+          setTimeout(function () {
+            toast.error("Please contact me directly at Makwaje999@gmail.com");
             return;
-          }
-          //// toast.error("This feature is currently not working");
-          //// setTimeout(function () {
-          ////   toast.error("Please contact me directly at Makwaje999@gmail.com");
-          //// }, 1500);
+          }, 1500);
 
           toast.success("Email sent successfully!");
           console.log(data);
